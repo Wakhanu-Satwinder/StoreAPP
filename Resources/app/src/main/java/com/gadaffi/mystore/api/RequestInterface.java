@@ -1,0 +1,19 @@
+package com.gadaffi.mystore.api;
+// import com.learn2crack.loginregistration.models.ServerRequest;
+//import com.gadaffi.mystore.loginregister.models.ServerResponse;
+
+import com.gadaffi.mystore.ServerRequest;
+import com.gadaffi.mystore.ServerResponse;
+
+import retrofit2.Call;
+import retrofit2.http.Body;
+import retrofit2.http.POST;
+
+public interface RequestInterface {
+
+        @POST("mistore/www/")
+        Call<ServerResponse> operation(@Body ServerRequest request);
+
+
+    }
+
